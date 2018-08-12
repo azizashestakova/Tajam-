@@ -1,0 +1,140 @@
+.expertise-content {
+  padding-bottom: 73px;
+  text-align: center;
+  margin: 0 10px;
+
+  &__title {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    color: $gray-violet;
+    font-weight: 700;
+    margin-top: 65px;
+    margin-bottom: 0;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Playfair Display', serif;
+    color: $dark-grayish-blue;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    opacity: 0.75;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 2px;
+      background-color: $light-gray;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 18px;
+    }
+  }
+
+  &__item {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &:nth-of-type(1),
+    &:nth-of-type(2),
+    &:nth-of-type(3) {
+      border-bottom: 1px solid $border;
+    }
+
+    &:nth-of-type(1),
+    &:nth-of-type(2),
+    &:nth-of-type(4),
+    &:nth-of-type(5) {
+      border-right: 1px solid $border;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+  }
+
+  &__img_item {
+    margin-top: 30px;
+  }
+
+  &__title_item {
+    font-size: 14px;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    color: $gray-violet;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  &__text_item {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    font-family: 'Roboto', sans-serif;
+    color: $gray;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    opacity: 0.75;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .expertise-content {
+  
+    &__item {
+  
+      &:nth-of-type(1),
+      &:nth-of-type(2),
+      &:nth-of-type(3),
+      &:nth-of-type(4) {
+        border-bottom: 1px solid $border;
+      }
+  
+      &:nth-of-type(1),
+      &:nth-of-type(3),
+      &:nth-of-type(5) {
+        border-right: 1px solid $border;
+      }
+
+      &:nth-of-type(2),
+      &:nth-of-type(4) {
+        border-right: 1px solid transparent;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .expertise-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .expertise-content {
+    padding-bottom: 40px;
+  
+    &__item {
+  
+      &:nth-of-type(5) {
+        border-bottom: 1px solid $border;
+      }
+  
+      &:nth-of-type(1),
+      &:nth-of-type(3),
+      &:nth-of-type(5) {
+        border-right: 1px solid transparent;
+      }
+    }
+  }
+}

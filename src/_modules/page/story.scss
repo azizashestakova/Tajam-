@@ -1,0 +1,63 @@
+.story-content {
+
+  &__img {
+    float: right;
+    margin-top: 70px;
+  }
+
+  &__block {
+    padding-bottom: 80px;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: $gray-violet;
+    margin-top: 65px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: $gray-violet;
+    opacity: 0.75;
+
+    &:nth-of-type(2) {
+      margin-top: 20px;
+    }
+  }
+
+  &__button {
+    margin-top: 10px;
+    padding: 9px 13px 8px;
+
+    &:hover {
+      color: $blue;
+      border: 1px solid $blue;
+    }
+
+    &:focus {
+      outline-color: $turquoise;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .story-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .story-content {
+  
+    &__block {
+      padding-bottom: 70px;
+    }
+  }
+}

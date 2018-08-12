@@ -1,0 +1,150 @@
+.works-content {
+  text-align: center;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 155px;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    color: $gray-violet;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    color: $gray-violet;
+    position: relative;
+    padding-right: 20px;
+    transition: all .3s ease-out;
+    
+    &:hover {
+      opacity: .4;
+    }
+
+    &:focus {
+      outline-color: $turquoise;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 8px;
+      height: 13px;
+      background-image: url(../images/content/more.png);
+      background-repeat: no-repeat;
+      top: 2px;
+      right: 0;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+
+    &:nth-child(2) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__item {
+    width: 200px;
+    height: 200px;
+    flex-grow: 1;
+
+    &:nth-child(1) {
+      background-color: #b6b6b6;
+    }
+
+    &:nth-child(2) {
+      background-color: #acacac;
+    }
+
+    &:nth-child(3) {
+      background-color: #a1a1a1;
+    }
+
+    &:nth-child(4) {
+      background-color: #8a8a8a;
+    }
+
+    &:nth-child(5) {
+      background-color: #b6b6b6;
+    }
+
+    &:nth-child(6) {
+      background-color: #a4a4a4;
+    }
+  }
+
+  &__bottom {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__button {
+    padding: 9px 25px 8px;
+
+    &:hover {
+      color: $blue;
+      border: 1px solid $blue;
+    }
+
+    &:focus {
+      outline-color: $turquoise;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .works-content {
+  
+    &__top {
+      height: 120px;
+    }
+
+    &__item {
+      width: 300px;
+    }
+
+    &__bottom{
+      height: 135px;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .works-content {
+  
+    &__top {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .works-content {
+  
+    &__top {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    &__title {
+      margin-top: 0;
+    }
+  }
+}

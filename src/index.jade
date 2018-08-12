@@ -1,0 +1,165 @@
+extends _layouts/base
+
+include ./_modules/youtube/youtube
+
+
+block title
+  title Tajam
+
+block content
+  .page-content
+    section.top-content 
+      .container
+        .row
+          .col-12
+            .top-content__block
+              h1.top-content__title We are awesome creative agency
+              p.top-content__text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+              a(href="#").top-content__button.button Learn more
+    section.story-content(id="about")
+      .container
+        .row
+          .col-3.offset-1.hidden-md-down
+            .story-content__img
+              img(src="images/content/figure.png", alt="figure")
+          .col-12.offset-0.col-lg-7.offset-lg-1
+            .story-content__block
+              h2.story-content__title Our story
+              p.story-content__text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+              p.story-content__text Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+              a(href="#").story-content__button.button Learn more
+    section.video-content
+      .container
+        a(href="#").video-content__block
+          img(src="images/content/icon-play.png", alt="icon-play").video-content__img
+          h3.video-content__title Watch our story
+    section.expertise-content(id="expertise")
+      .container
+        .row
+          .col-12
+            h2.expertise-content__title Expertise
+            p.expertise-content__text Lorem ipsum dolor sit amet proin gravida nibh vel velit
+        .row
+          .col-12.col-sm-6.col-lg-4.expertise-content__item
+            .expertise-content__wrapper
+              img(src="images/content/icon-design.png", alt="figure").expertise-content__img_item
+              h3.expertise-content__title_item Web design &amp; development
+              p.expertise-content__text_item This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+          .col-12.col-sm-6.col-lg-4.expertise-content__item
+            .expertise-content__wrapper
+              img(src="images/content/icon-identity.png", alt="figure").expertise-content__img_item
+              h3.expertise-content__title_item Branding identity
+              p.expertise-content__text_item This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+          .col-12.col-sm-6.col-lg-4.expertise-content__item
+            .expertise-content__wrapper
+              img(src="images/content/icon-mobile.png", alt="figure").expertise-content__img_item
+              h3.expertise-content__title_item Mobile app
+              p.expertise-content__text_item This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+          .col-12.col-sm-6.col-lg-4.expertise-content__item
+            .expertise-content__wrapper
+              img(src="images/content/icon-optimization.png", alt="figure").expertise-content__img_item
+              h3.expertise-content__title_item Search engine optimization
+              p.expertise-content__text_item This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+          .col-12.col-sm-6.col-lg-4.expertise-content__item
+            .expertise-content__wrapper
+              img(src="images/content/icon-development.png", alt="figure").expertise-content__img_item
+              h3.expertise-content__title_item Game development
+              p.expertise-content__text_item This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+          .col-12.col-sm-6.col-lg-4.expertise-content__item
+            .expertise-content__wrapper
+              img(src="images/content/icon-love.png", alt="figure").expertise-content__img_item
+              h3.expertise-content__title_item Made with love
+              p.expertise-content__text_item This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+    section.team-content(id="team")
+      .container
+        .row
+          .col-12
+            h2.team-content__title Meet our amazing team
+            p.team-content__text Lorem ipsum dolor sit amet proin gravida nibh vel velit
+        .row
+          .col-12.col-sm-6.col-lg-3
+            .team-content__card
+              img.team-content__img(src="images/content/photo.jpg", alt="photo")
+              span.team-content__name Semph Ucuk
+              span.team-content__profession SEO &amp; Founder
+          .col-12.col-sm-6.col-lg-3
+            .team-content__card
+              img.team-content__img(src="images/content/photo.jpg", alt="photo")
+              span.team-content__name Dik Adalin
+              span.team-content__profession Engineering
+          .col-12.col-sm-6.col-lg-3
+            .team-content__card
+              img.team-content__img(src="images/content/photo.jpg", alt="photo")
+              span.team-content__name Jeng Kol
+              span.team-content__profession Designer
+          .col-12.col-sm-6.col-lg-3
+            .team-content__card
+              img.team-content__img(src="images/content/photo.jpg", alt="photo")
+              span.team-content__name Pet Romak
+              span.team-content__profession Marketing
+        .row
+          .col-12
+            p.team-content__text_exhortation Become part of our dream team, let’s join us ! 
+            a(href="#").team-content__button.button We are hiring
+    section.works-content(id="works")
+      .container
+        .row
+          .col-12
+            .works-content__top
+              h2.works-content__title Our works
+              a(href="#").works-content__text See all project in dribbble
+      .works-content__container
+        .works-content__item
+        .works-content__item
+        .works-content__item
+        .works-content__item
+        .works-content__item
+        .works-content__item
+      .works-content__container
+        .works-content__item
+        .works-content__item
+        .works-content__item
+        .works-content__item
+        .works-content__item
+        .works-content__item
+      .container
+        .row
+          .col-12
+            .works-content__bottom
+              a(href="#").works-content__button.button Load more
+    section.quote-content(id="quotes")
+      .container
+        .row
+          .col-12
+            img(src="images/content/quotes.png", alt="photo").quote-content__img
+            blockquote.quote-content__quote
+              p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+            span.quote-content__name Jane Galadriel
+            span.quote-content__profession CEO Tengkurep
+            ul.photo-card
+              li.photo-card__item
+                a(href="#")
+                  img(src="images/content/person_1.png", alt="photo")
+              li.photo-card__item
+                a(href="#")
+                  img(src="images/content/person_2.png", alt="photo")
+              li.photo-card__item
+                a(href="#")
+                  img(src="images/content/person_3.png", alt="photo")
+              li.photo-card__item
+                a(href="#")
+                  img(src="images/content/person_4.png", alt="photo")
+              li.photo-card__item
+                a(href="#")
+                  img(src="images/content/person_5.png", alt="photo")
+    section.form-content
+      .container
+        .row
+          .col-12
+            h2.form-content__title Give us a good news
+            form(action="").form-content__form
+              input.form-content__item(type="text" placeholder="Name" required)
+              input.form-content__item(type="email" placeholder="Email" required)
+              input.form-content__item(type="text" placeholder="Subject" required)
+              textarea.form-content__item(rows="10" placeholder="Your message")
+              button(type="submit").form-content__button.button.form-content__item Submit

@@ -1,0 +1,95 @@
+.top-content {
+  padding-top: 86px;
+  background:
+    linear-gradient(
+      rgba(45, 27, 90, .85), 
+      rgba(45, 27, 90, .85)
+    ),
+    url(../images/content/forest-bg.jpg);
+
+  background-size: cover;
+
+  &__block {
+    text-align: center;
+    padding-bottom: 198px;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title {
+    font-size: 32px;
+    color: $white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-top: 140px;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 1px;
+      background-color: $turquoise;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    color: $white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-top: 30px;
+  }
+
+  &__button {
+    margin-top: 35px;
+    padding: 9px 13px 8px;
+    
+    &:hover {
+      color: $white;
+      border: 1px solid $white;
+    }
+
+    &:focus {
+      outline-color: $turquoise;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .top-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .top-content {
+
+    &__block  {
+      padding-bottom: 125px;
+    }
+
+    &__title {
+      margin-top: 100px;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .top-content {
+
+    &__block  {
+      padding-bottom: 85px;
+    }
+
+    &__title {
+      margin-top: 47px;
+    }
+  }
+}

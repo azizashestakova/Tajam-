@@ -1,0 +1,26 @@
+extends _layouts/base
+
+include ./_modules/form/form
+
+block title
+  title Элементы форм
+
+block content
+  h1 Интерактивные элементы
+  .row
+    .col-12.col-lg-8.offset-lg-2
+      h2 Форма
+      +form()
+  button.btn.btn-primary(type="button" data-toggle="modal" data-target="#exampleModal") Launch demo modal
+  .modal.fade( id="exampleModal")
+    .modal-dialog(role="document")
+      .modal-content
+        .modal-header
+          h5.modal-title Modal title
+          button(type="button" data-dismiss="modal" aria-label="Close").close
+            span(aria-hidden="true") &times;
+        .modal-body
+          p Modal body text goes here.
+        .modal-footer
+          button(type="button" class="btn btn-primary") Save changes
+          button(type="button" class="btn btn-secondary" data-dismiss="modal") Close

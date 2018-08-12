@@ -1,0 +1,79 @@
+extends _layouts/base
+
+block title
+  title Пример сетки
+
+block content
+  <style> .dm{background-color: #bee0be; margin: 10px 0; text-align:center; } .left-part{flex-grow: 1; width: calc(100% - 290px);} .right-part{width: 270px; margin-left: 20px; min-height: 600px; background: navy;} .wrapp{display: flex;}</style>
+  .wrapp
+    .left-part
+      .row
+        .col
+          .dm .col x12
+      .row
+        .col
+          .dm .col x6
+        .col
+          .dm .col x6
+      .row
+        .col
+          .dm .col x4
+        .col
+          .dm .col x4
+        .col
+          .dm .col x4
+      .row
+        .col-12.col-md-4
+          .dm .col x4
+        .col-12.col-md-8
+          .dm .col x8
+      .row
+        .col-12.col-md-8
+          .dm .col x8
+        .col-12.col-md-4
+          .dm .col x4
+      .row
+        .col-12.col-sm-6.col-lg-3
+          .dm .col x3
+        .col-12.col-sm-6.col-lg-3
+          .dm .col x3
+        .col-12.col-sm-6.col-lg-3
+          .dm .col x3
+        .col-12.col-sm-6.col-lg-3
+          .dm .col x3
+      .row
+        .col-12.col-md-9
+          .dm .col x9
+        .col-12.col-md-3
+          .dm .col x3
+      .row
+        .col-12.col-md-3
+          .dm .col x3
+        .col-12.col-md-9
+          .dm .col x9
+      .row
+        .col-12.col-sm-1
+          .dm .col x1
+        .col-12.col-sm-1
+          .dm .col x1
+        .col-12.col-sm-1
+          .dm .col x1
+        .col-12.col-sm-1
+          .dm .col x1
+        .col-12.col-sm-1
+          .dm .col x1
+        .col-12.col-sm-1
+          .dm .col x1
+        .col-12.col-sm-1
+          .dm .col x1
+        .col-12.col-sm-1
+          .dm .col x1
+        .col-12.col-sm-1
+          .dm .col x1
+        .col-12.col-sm-1
+          .dm .col x1
+        .col-12.col-sm-1
+          .dm .col x1
+        .col-12.col-sm-1
+          .dm .col x1
+    .right-part

@@ -1,0 +1,23 @@
+mixin form()
+  form(action="")
+    .row.justify-content-center
+      .col-md-6
+        .form-group
+          label(for="exampleInputEmail1") Email address
+          input.form-control(type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email")
+      .col-md-6
+        .form-group
+          label(for="exampleInputEmail1") Phone
+          input.form-control(type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Phone")
+      .col-md-6
+        .form-group
+          label(for="exampleInputEmail1") Username
+          input.form-control(type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username")
+      .col-md-6
+        .form-group
+          label(for="exampleInputEmail1") Password
+          input.form-control(type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Password")
+      .col-md-6.text-center
+        .form-group
+          label(for="exampleInputEmail1" style="display: block;") &nbsp;
+          button(role="button").btn.btn-success Отправить

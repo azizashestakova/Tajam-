@@ -1,0 +1,62 @@
+// header styles
+.header {
+  top: 0;
+  z-index: 1;
+  position: relative;
+
+  &__nav {
+    
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+    &__list-item {
+
+    }
+  }
+
+  &__link {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: $white;
+    text-transform: uppercase;
+    transition: color .3s ease-out;
+
+    &:hover,
+    &:active {
+      color: $turquoise;
+    }
+
+    &:focus {
+      outline-color: $turquoise;
+      color: $turquoise;
+    }
+  }
+
+  &__link.active {
+    color: $turquoise;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  
+  .header {
+    padding-top: 15px;
+  
+    &__nav {
+      display: none;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+
+  .logo {
+    padding-left: 10px;
+  }
+}
